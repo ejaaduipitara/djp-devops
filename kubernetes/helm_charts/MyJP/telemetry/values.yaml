@@ -5,8 +5,10 @@ namespace: ""
 imagepullsecrets: ocidevregistrysecret
 dockerhub: bom.ocir.io/bmgftexhb86q/ejp-dev
 
+
+
 telemetry_repository: "telemetry-service"
-telemetry_image_tag: "latest"
+#telemetry_image_tag: "latest"
 
 telemetry_pg_host: ""
 telemetry_pg_username: ""
