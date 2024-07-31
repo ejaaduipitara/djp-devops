@@ -2,10 +2,10 @@
 environment: "dev"
 
 namespace: ""
-imagepullsecrets: ""
-dockerhub: ""
+imagepullsecrets: ocidevregistrysecret
+dockerhub: bom.ocir.io/bmgftexhb86q/ejp-dev
 
-telemetry_repository: "djp-telemetry-service"
+telemetry_repository: "telemetry-service"
 telemetry_image_tag: "latest"
 
 telemetry_pg_host: ""
