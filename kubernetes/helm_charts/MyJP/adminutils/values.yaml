@@ -5,7 +5,8 @@ dockerhub: bom.ocir.io/bmgftexhb86q/ejp-dev
 
 replicaCount: 1
 repository: "adminutil"
-image_tag: "release-4.5.0-ejp_d05a322_16"
+#image_tag: "release-4.5.0-ejp_d05a322_16"
+image_tag: {{image_tag}}
 network:
   port: 4000
   targetport: 4000
