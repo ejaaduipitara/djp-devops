@@ -24,7 +24,7 @@ pipeline {
                         values_file = "${currentWs}/private_repo/ansible/inventory/$env/MyJP/private_values.yaml"
                         kubeconfig_path = sh(returnStdout: true, script: "grep kubeconfig_path $values_file").split(':')[-1].trim()
                         djp_namespace = sh(returnStdout: true, script: "grep namespace $values_file").split(':')[-1].trim()
-                        sh "helm upgrade --install $jobName $chart_path --namespace  $djp_namespace --kubeconfig  $kubeconfig_path --set  ${params.repository_name}= ${params.repository_value} --set  ${params.image_tag}= ${params.image_tag_value} -f $values_file"
+                        sh "helm upgrade --install $jobName $chart_path --namespace  $djp_namespace --kubeconfig  $kubeconfig_path --set  ${params.repository_name}=${params.repository_value} --set  ${params.image_tag}=${params.image_tag_value} -f $values_file"
                 }
             }
         }
