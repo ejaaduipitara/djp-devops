@@ -6,6 +6,8 @@ metadata:
 data:
   KONG_ADMIN_LISTEN: "{{ .Values.kong_admin_listen }}"
   KONG_DATABASE: "{{ .Values.kong_database }}"
+  KONG_HEADERS: "{{ .Values.kong_headers }}"
+  KONG_LATENCY_TOKENS: "{{ .Values.kong_latency_tokens }}"
   KONG_LOG_LEVEL: "{{ .Values.kong_log_level }}"
   KONG_LUA_SOCKET_POOL_SIZE: "{{ .Values.kong_lua_socket_pool_size }}"
   KONG_MEM_CACHE_SIZE: "{{ .Values.kong_mem_cache_size }}"
@@ -17,5 +19,6 @@ data:
   KONG_PG_USER: "{{ .Values.kong_pg_user }}"
   KONG_PROXY_ACCESS_LOG: "{{ .Values.kong_proxy_access_log }}"
   KONG_RATELIMIT_CACHE_SIZE: "{{ .Values.kong_ratelimit_cache_size }}"
+  KONG_SERVER_TOKENS: "{{ .Values.kong_server_tokens }}"
   KONG_TRUSTED_IPS: "{{ .Values.kong_trusted_ips }}"
   KONG_UPSTREAM_KEEPALIVE: "{{ .Values.kong_upstream_keepalive }}"
